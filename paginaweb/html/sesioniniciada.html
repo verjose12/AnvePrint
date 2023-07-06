@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Desing</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="icon" href="../imagenes/dc.png" type="image/x-icon">
+  <style>
+  .container{
+  width: 100%;
+  height: 100%;
+  background-color: #F5A9A9;
+}
+.encabezado img{
+  width: 15%;
+  height: 150px;
+  float: left;
+}
+.ini{
+  width: 100%;
+  height: 150px;
+  background-color: #F781F3;
+}
+.ini>h1{
+  margin-left: 40%;
+  padding-top: 40px;
+}
+.segundo{
+  width: 100%;
+  height: 100%;
+  background: #A4A4A4;
+  float: left;
+}
+.nav{
+  margin-left: 350px;
+  font-size: 20px;
+}
+ul, ol{
+  list-style: none;
+}
+.nav li a {
+  background-color: #A4A4A4;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+.nav li a:hover{
+  background-color: #F5A9A9;
+  transition: all .5s;
+}
+.nav > li{
+  float: left;
+}
+.nav li ul{
+  display: none ;
+  position: absolute;
+  min-width: 140px;
+}
+.nav li:hover > ul{
+  display: block;
+}
+.nav li ul li{
+  position: relative;
+}
+.nav li ul li ul {
+  right: 140px;
+  top: 0px;
+}
+#bann{
+  width: 80%;
+  height: 500px;
+  border: 2px;
+  border-style: solid;
+  border-color: #CEE3F6;
+  background-size: 100% 100%;
+  animation-name: diseño;
+  background-repeat: no-repeat;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  margin-left: 10%;
+
+}
+@keyframes diseño {
+  0%,10%{
+    background-image: url(../imagenes/inicio/azul.jpg);
+    opacity: 1;
+  }
+  11%,20%{
+    background-image: url(../imagenes/inicio/termos.jpg);
+    opacity: 1;
+  }
+  21%,30%{
+    background-image: url(../imagenes/inicio/tzp.jpg);
+    opacity: 1;
+  }
+  31%,40%{
+    background-image: url(../imagenes/inicio/roja.jpg);
+    opacity: 1;
+  }
+  41%,50%{
+    background-image: url(../imagenes/inicio/publi.jpg);
+    opacity: 1;
+  }
+  51%,60%{
+    background-image: url(../imagenes/inicio/invita2.jpg);
+    opacity: 1;
+  }
+  61%,70%{
+    background-image: url(../imagenes/inicio/serigrafia.jpg);
+    opacity: 1;
+  }
+  71%,80%{
+    background-image: url(../imagenes/inicio/mickey.jpg);
+    opacity: 1;
+  }
+  81%,90%{
+    background-image: url(../imagenes/inicio/bodita.jpg);
+    opacity: 1;
+  }
+  91%,100%{
+    background-image: url(../imagenes/inicio/bodita2.jpg);
+    opacity:1;
+  }
+}
+  </style>
+</head>
+<body>
+<div class="container">
+    <section class="main row">
+      <article class="col-md-12 col-sm-12 col-xs-12">
+        <div class="encabezado">
+          <img src="../imagenes/logo.jpg">
+        </div>
+        <div class="ini">
+          <h1>Imagen Desing</h1>
+        </div>
+
+      </article>
+      <article class="col-md-12 col-sm-12 col-xs-12">
+        <div class="segundo">
+          <ul class="nav">
+            <li><a href="playeras3.php">Playeras</a></li>
+            <li><a href="sudaderas.html">Sudaderas</a></li>
+            <li><a href="termos.html">Termos</a></li>
+            <li><a href="tazas.html">Tazas</a></li>
+            <li><a href="invitaciones.html">Invitaciones</a></li>
+            <li><a href="../inicio.html">Cerrar sesi&oacute;n</a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="col-md-12 col-sm-12 col-xs-12">
+        <div id="bann"></div>
+      </article>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+</html>

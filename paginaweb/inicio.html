@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Desing</title>
+  <link rel="icon" href="imagenes/dc.png" type="image/x-icon">
+
+  <style>
+
+  .container{
+    width: 100%;
+    height: 100%;
+    background: #CED8F6;
+  }
+
+
+    #cabecera{
+      width:80%;
+      height:150px;
+      border: 2px solid;
+      border-color: #FFB6C1;
+      background-color: #FFB6C1;
+      margin-left: 140px;
+    }
+    img{
+      width: 20%;
+      height: 145px;
+      float: left;
+    }
+    #titulo{
+      float: right;
+      margin-right: 35%;
+      margin-top: 3%;
+    }
+
+    aside{
+    width: 80%;
+    height: 50px;
+    border: 2px solid;
+    border-color: #A4A4A4;
+    background-color: #A4A4A4;
+    margin-left: 140px;
+  }
+
+   ul, ol{
+   list-style: none;
+  }
+  .nav li a {
+   background-color: #A4A4A4;
+   color: #000000;
+   text-decoration: none;
+   padding: 5px 55px;
+   display: block;
+   margin-left: 25px;
+
+ }
+  .nav li a:hover{
+   background-color: #F5A9A9;
+   transition: all .5s;
+ }
+  .nav > li{
+   float: left;
+ }
+  .nav li ul{
+   display: none ;
+   position: absolute;
+   min-width: 140px;
+ }
+  .nav li:hover > ul{
+   display: block;
+
+
+ }
+  .nav li ul li{
+  position: relative;
+ }
+  .nav li ul li ul {
+  right: 140px;
+  }
+
+  #bann{
+  width: 80%;
+  height: 500px;
+  border: 2px;
+  border-style: solid;
+  border-color: #CEE3F6;
+  background-size: 100% 500px;
+  animation-name: diseño;
+  background-repeat: no-repeat;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  margin-left: 140px;
+
+}
+  @keyframes diseño {
+    0%,10%{
+    background-image: url(imagenes/inicio/azul.jpg);
+    opacity: 2;
+  }
+    11%,20%{
+    background-image: url(imagenes/inicio/termos.jpg);
+    opacity: 2;
+  }
+    21%,30%{
+    background-image: url(imagenes/inicio/tzp.jpg);
+    opacity: 2;
+  }
+    31%,40%{
+    background-image: url(imagenes/inicio/roja.jpg);
+    opacity:  2;
+  }
+    41%,50%{
+    background-image: url(imagenes/inicio/publi.jpg);
+    opacity:  2;
+  }
+    51%,60%{
+    background-image: url(imagenes/inicio/invita2.jpg);
+    opacity:  2;
+  }
+    61%,70%{
+    background-image: url(imagenes/inicio/serigrafia.jpg);
+    opacity:  2;
+  }
+    71%,80%{
+    background-image: url(imagenes/inicio/babys.jpg);
+    opacity:  2;
+  }
+    81%,90%{
+    background-image: url(imagenes/inicio/bodita.jpg);
+    opacity:  2;
+  }
+    91%,100%{
+    background-image: url(imagenes/inicio/bodita2.jpg);
+    opacity:  2;
+  }
+ }
+
+
+  nav h2{
+  margin-left: 35%;
+ }
+  #registro{
+  width: 20%;
+  height: 50px;
+  border: 2px solid;
+  margin: auto;
+  background-color: #E6E6E6;
+  border-color: #E6E6E6;
+ }
+ #registro p{
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.contenedor{
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.contenedor h1{
+  margin-left: 45%;
+}
+
+.portafolio{
+  margin-top: 10%;
+  background: #FFFFFF;
+  width: 80%;
+  margin-left: 150px;
+}
+
+.galeria{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+.imagen{
+  width: 18%;
+  height: 254px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hovergalery{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: hsla(273,91%,27%, 0.7);
+  transition: transform .5s;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hovergalery img{
+  width: 100%;
+  height: 100%;
+}
+
+.hovergalery p{
+  color: #FFFFFF;
+  position: absolute;
+  margin-left: 30%;
+
+}
+
+.imagen:hover .hovergalery{
+  transform: scale(1);
+}
+.hovergalery p{
+  margin-left: 40%;
+
+}
+.info{
+width: 80%;
+text-align: justify;
+
+}
+.quienes{
+  width: 40%;
+  height: 300px;
+  margin-top: 100px;
+  text-align: justify;
+  margin-left: 60px;
+
+}
+
+.produccion{
+  width: 40%;
+  height: 300px;
+  margin-top: -305px;
+  text-align: justify;
+  margin-left: 550px;
+
+
+
+}
+
+footer{
+  width: 80%;
+  margin-left: 150px;
+}
+
+.serv{
+  margin-left: 320px;
+}
+
+.info{
+  margin-left: 100px;
+}
+
+.quienes h3{
+  margin-left: 35%;
+}
+
+.produccion h3{
+  margin-left: 30%;
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+  <div class="container">
+    <header  class="col-md-12 col-sm-12 col-xs-12">
+      <div id="cabecera">
+        <img src="imagenes/logo.jpg">
+        <div id="titulo">
+          <font color="#000000" size="25">Imagen Desing</font>
+        </div>
+
+      </div>
+    </header>
+
+
+      <aside class="col-md-12 col-sm-12 col-xs-12">
+        <article>
+          <ul class="nav">
+          <li><a href="#catalogo">Cat&aacute;logo</a></li>
+            <li><a href="#servicios">Nuestros Servicios</a></li>
+            <li><a href="#nosotros">Quienes Somos</a></li>
+            <li><a href="html/sesion.php">Iniciar Sesi&oacute;n</a></li>
+          </ul>
+        </article>
+      </aside>
+
+      <section class="col-md-12 col-sm-12 col-xs-12" >
+        <article id="bann">
+
+        </article>
+        <br>
+      </section>
+
+      <nav class="col-md-12 col-sm-12 col-xs-12">
+              <article >
+                <h2>¡Haz tus pedidos ahora, ordena ya!</h2>
+                <div id="registro">
+                <p align="center" ><a href="html/registrar.php">REG&Iacute;STRATE</a></p>
+                </div>
+              </article>
+            <br><br>
+        </nav>
+
+        <section class="col-md-12 col-sm-12 col-xs-12" >
+          <div class="portafolio">
+            <div class="contenedor">
+            <h1><a name="catalogo">Cat&aacute;logo</a></h1>
+            <div class="galeria">
+
+
+                <div class="imagen">
+                <img src="imagenes/catalogo/player4.jpg">
+                  <div class="hovergalery">
+                    <a href="html/playeras1.html"><img src="imagenes/tload.png"></a>
+                    <p>Playeras</p>
+                  </div>
+                </div>
+
+                <div class="imagen">
+                  <img src="imagenes/catalogo/sudadera2.jpg" alt="">
+                  <div class="hovergalery">
+                    <a href="html/sudaderas1.html"><img src="imagenes/tload.png"></a>
+                    <p>Sudaderas</p>
+                  </div>
+                </div>
+
+                <div class="imagen">
+                  <img src="imagenes/catalogo/ter2.jpg" alt="">
+                  <div class="hovergalery">
+                    <a href="html/termos1.html"><img src="imagenes/tload.png" alt=""></a>
+                    <p>Termos</p>
+                  </div>
+                </div>
+
+                <div class="imagen">
+                  <img src="imagenes/catalogo/tazas2.jpg" >
+                  <div class="hovergalery">
+                    <a href="html/tazas1.html"><img src="imagenes/tload.png"></a>
+                    <p>Tazas</p>
+                  </div>
+                </div>
+
+                <div class="imagen">
+                  <img src="imagenes/catalogo/bodita.jpg" alt="">
+                  <div class="hovergalery">
+                    <a href="html/invitaciones1.html"><img src="imagenes/tload.png" alt=""></a>
+                    <p>Invitaciones</p>
+                  </div>
+                </div>
+
+              </article>
+
+           </div>
+           </div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="serv"><font size="10" ><p><b><a name="servicios">Nuestros Servicios</a></b></p></font></div>
+          <div class="info">
+            <font size="5"><p>"Como Profesionales en diseño sabemos la importancia que tiene para nuestros
+          clientes un marcaje de calidad y duradero. En nuestra amplia variedad de invitaciones,
+          tazas, playeras, sudaderas podr&aacute;s elegir entre la multitud de piezas para personalizar.
+              Una vez hayas elegido la pieza que m&aacute;s se adapte a tu colecci&oacute;n o campaña de
+         marketing, nos encargaremos de personalizarla y de entregarla en el tiempo acordado.
+        Para saber m&aacute;s sobre nuestros servicios consulta los diferentes apartados en esta secci&oacute;n."
+           </p></font>
+          </div>
+
+          <div class="quienes">
+            <h3><a name="nosotros">Qui&eacute;nes Somos</a></h3>
+
+
+            <font size="4"><i><p>Imagen Desing nace con una gran ilusion por crear un proyecto que nos permita realizar
+                 nuestros propios diseños. Con el tiempo empezamos a ofrecer nuestros servicios de personalizacion tanto
+                    para colecciones como para campañas de marketing.</p></i></font>
+          </div>
+
+
+
+          <div class="produccion">
+            <h3>Producci&oacute;n y Entrega</h3>
+            <font size="4"><i><p>Contamos con un equipo especializado en decoraci&oacute;n y diseño,
+        disponemos de un riguroso control de calidad que controla el
+        producto desde la concepci&oacute;n de la idea, durante su fabricaci&oacute;n
+                          y hasta el resultado final.</p></i></font>
+          </div>
+
+
+
+        </footer>
+
+
+
+
+
+
+</div>
+</body>
+</html>
