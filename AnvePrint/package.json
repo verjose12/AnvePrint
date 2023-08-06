@@ -1,0 +1,17 @@
+{
+  "name": "anveprint",
+  "version": "1.0.0",
+  "description": "e-commerce for project UTCJ-IntegradorProjet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "12345"
+  ],
+  "author": "Veronica Jose Narciso",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
