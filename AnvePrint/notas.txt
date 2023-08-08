@@ -1,0 +1,26 @@
+codigo package.json
+
+{
+  "name": "anveprint",
+  "version": "1.0.0",
+  "description": "e-commerce for project UTCJ-IntegradorProjet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" ___Esta instruccion la tiene por default__
+    "start": "nodemon server.js"___Reinicia el servidor automaticamente y Esta instruccion es para iniciar el modulo nodemon que sirve solo cuando 
+    estamos desarrollando y el proyecto no depende de el para su ejecucion___
+  },
+  "keywords": [
+    "12345"
+  ],
+  "author": "Veronica Jose Narciso",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+
+
