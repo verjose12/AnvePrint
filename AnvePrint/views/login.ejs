@@ -1,0 +1,21 @@
+<!-- views/login.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iniciar Sesión</title>
+</head>
+<body>
+  <h1>Iniciar Sesión</h1>
+  <form action="/login" method="post">
+    <div>
+      <label for="usuario">Usuario:</label>
+      <input type="text" name="usuario" id="usuario" required>
+    </div>
+    <div>
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" name="contrasena" id="contrasena" required>
+    </div>
+    <button type="submit">Iniciar Sesión</button>
+  </form>
+</body>
+</html>
