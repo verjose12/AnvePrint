@@ -11,6 +11,21 @@ header {
     padding: 10px;
 }
 
+.Logo img{
+    width: 150px;
+}
+
+.BotonIndex {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+  }
+  
+  .BotonIndex a {
+    margin-right: 10px;
+  }
+
 /* Estilos para el carrusel en tamaño mediano */
 .carousel-item img {
     max-width: 600px; /* Establecer un ancho máximo para el tamaño mediano */

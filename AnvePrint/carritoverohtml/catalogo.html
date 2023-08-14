@@ -7,6 +7,8 @@
 body {
   font-family: verdana, sans-serif;
   font-size: small;
+  background-color: black; /* Cambio en el fondo */
+  color: white; /* Cambio en el color del texto */
 }
 
 .float {
@@ -15,6 +17,9 @@ body {
 }
 
 .Header {  
+}
+.Header img {
+  width: 200px; /* Cambia el tamaño de la imagen según tus necesidades */
 }
 .Header h1 {
   padding: 13px;
@@ -37,17 +42,18 @@ body {
   top: 20px;
   right: 10px;
   width: 135px;
-  background-color:#eee;
+  background-color:black;
   border-width: 1px;
   border-style: solid;
   border-color: black;
+  color: white; /* Cambio en el color del texto */
 }
 .LeftPanel h1, .RightPanel h1
 {
-  background-color: black;
+  background-color: black; /* Cambio en el color de fondo */
   color: white;
   font-size: small;
-  padding: 6px;
+  padding: 5px;
   margin-bottom: 3px;
 }
 .CenterPanel {
@@ -69,13 +75,18 @@ form {
   margin-top: 5px;
 }
 
+/* Cambio en el color de los botones */
+input[type="image"], input[type="submit"] {
+  background-color: red;
+  color: white;
+}
 </style>
 </head>
 
 <body>
 <div class="Header">
-<img border="0" src="brainfood.png" ><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><b>Better living through food.</i></b><br>
+<img border="0" src="CatalogoImg/Logo.PNG" ><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><b>Imaginacion a tu estilo</i></b><br>
 
 </div>
 <div class="RightPanel">
@@ -102,8 +113,8 @@ We use PayPal!</br>
 
 <div class="CenterPanel">
 <p>
-<img border="0" src="brownies_small.jpg" class="float">
-<h2>Mystical Brownies</h2>
+<img border="0" src="CatalogoImg/Sudadera.png" class="float">
+<h2>Sudadera negra</h2>
 <p style="margin: 0px">Transport yourself to another world with these aromatic brownies. May include minced Asian cicadas. ($27.95)
 </p>
 <form style="margin-top: 5px" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -111,7 +122,7 @@ We use PayPal!</br>
 <input type="hidden" name="add" value="1">
 <input type="hidden" name="cmd" value="_cart">
 <input type="hidden" name="business" value="matthewpmacdonald@hotmail.com">
-<input type="hidden" name="item_name" value="Mystic Brownies">
+<input type="hidden" name="item_name" value="Sudadera">
 <input type="hidden" name="item_number" value="Food-001">
 <input type="hidden" name="amount" value="27.95">
 <input type="hidden" name="page_style" value="BrainFood">
@@ -120,8 +131,8 @@ We use PayPal!</br>
 <br style="clear: both;">
 </form>
 
-<p><img border="0" src="cookies_small.jpg" class="float"></p>
-<h2>Sinful Cookies</h2>
+<p><img border="0" src="CatalogoImg/Camisetas.png" class="float"></p>
+<h2>Camiseta negra</h2>
 <p style="margin: 0px">These cookies are officially recognized for their moral-fibre-weakening characteristics.
 Do NOT bring to church bake sales. ($17.95)</p>
 <form style="margin-top: 5px" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -129,7 +140,7 @@ Do NOT bring to church bake sales. ($17.95)</p>
 <input type="hidden" name="add" value="1">
 <input type="hidden" name="cmd" value="_cart">
 <input type="hidden" name="business" value="matthewpmacdonald@hotmail.com">
-<input type="hidden" name="item_name" value="Sinful Cookies">
+<input type="hidden" name="item_name" value="Camiseta negra">
 <input type="hidden" name="item_number" value="Food-002">
 <input type="hidden" name="amount" value="17.95">
 <input type="hidden" name="page_style" value="BrainFood">
@@ -138,15 +149,15 @@ Do NOT bring to church bake sales. ($17.95)</p>
 </form>
 
 <br style="clear: both;">
-<p><img border="0" src="easter_small.jpg" class="float"></p>
-<h2>Candied Chocolate Eggs</h2>
+<p><img border="0" src="CatalogoImg/Tazas.jpg" class="float"></p>
+<h2>Tazas</h2>
 <p style="margin: 0px">The only candied eggs to contain 100% real egg. Highly perishable. ($94.95)</p>
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
 <input type="hidden" name="add" value="1">
 <input type="hidden" name="cmd" value="_cart">
 <input type="hidden" name="business" value="matthewpmacdonald@hotmail.com">
-<input type="hidden" name="item_name" value="Candied Chocolate Eggs">
+<input type="hidden" name="item_name" value="Taza AnvePrint">
 <input type="hidden" name="item_number" value="Food-003">
 <input type="hidden" name="amount" value="94.95">
 <input type="hidden" name="page_style" value="BrainFood">
@@ -155,8 +166,8 @@ Do NOT bring to church bake sales. ($17.95)</p>
 <br style="clear: both;">
 </form>
 
-<p><img border="0" src="fruitflan_small.jpg" class="float"></p>
-<h2>Double-Take Fruit Flan</h2>
+<p><img border="0" src="CatalogoImg/Sudadera.jpg" class="float"></p>
+<h2>Sudadera</h2>
 <p style="margin: 0px">Our award winning fruit flan with high-end plastic fruits. Eat or use to decorate small rooms. ($32.95)</p>
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">

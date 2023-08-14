@@ -59,8 +59,14 @@ app.get('/registro', (req, res) => {
   res.render('registro');
 });
 
+//Catalogo1
+app.get('/catalogo1', (req, res) => {
+  res.render('Catalogo1');
+});
 
-
+app.get('/anveprint', (req, res) => {
+  res.render('AnvePrint');
+});
 // Ruta para servir archivos estáticos (como imágenes) desde la carpeta 'public'
 
 app.use(express.static('public'));

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Sudaderas</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .sudadera {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .sudadera img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Sudaderas</h1>
+    </header>
+    <div class="catalogo">
+        <div class="sudadera">
+            <img src="img/Sudadera.jpg" alt="Sudadera 1">
+            <h2>Sudadera Negra</h2>
+            <p>Descripción de la sudadera 1.</p>
+            <p>Precio: $29.99</p>
+        </div>
+        <div class="sudadera">
+            <img src="img/Sudadera.jpg" alt="Sudadera 2">
+            <h2>Sudadera</h2>
+            <p>Descripción de la sudadera 2.</p>
+            <p>Precio: $34.99</p>
+        </div>
+        <div class="sudadera">
+            <img src="img/Sudadera.jpg" alt="Sudadera 3">
+            <h2>Sudadera Negra</h2>
+            <p>Descripción de la sudadera 3.</p>
+            <p>Precio: $29.99</p>
+        </div>
+
+        <div class="sudadera">
+            <img src="img/Sudadera.jpg" alt="Sudadera 4">
+            <h2>Sudadera</h2>
+            <p>Descripción de la sudadera 4.</p>
+            <p>Precio: $34.99</p>
+        </div>
+        <!-- Agrega más sudaderas aquí -->
+    </div>
+    <footer>
+        <p>&copy; 2023 AnvePrint</p>
+    </footer>
+</body>
+</html>
