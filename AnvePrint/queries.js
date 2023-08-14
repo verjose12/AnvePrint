@@ -9,7 +9,16 @@ function insertUser(nombre, correo, contrasena, callback) {
   );
 }
 
+function authenticateUser(correo, contrasena, callback) {
+    db.query(
+      'SELECT nombre FROM usuarios WHERE correo = ? AND contrasena = ?',
+      [correo, contrasena],
+      callback
+    );
+  }
+  
 module.exports = {
   insertUser,
+  authenticateUser,
   // Agrega más funciones de consulta aquí si es necesario
 };
