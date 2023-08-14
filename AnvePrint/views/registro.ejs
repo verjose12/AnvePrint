@@ -1,23 +1,76 @@
 <!-- views/registro.ejs -->
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Registro</title>
+    <!-- Agrega el enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilo personalizado para el cuerpo de la página */
+        body {
+            background-color: #f8f9fa; /* Fondo gris claro */
+            color: #000000; /* Texto negro */
+        }
+
+        /* Estilo personalizado para el formulario */
+        form {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo personalizado para los campos de entrada */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da; /* Borde gris claro */
+            border-radius: 5px;
+        }
+
+        /* Estilo personalizado para el botón de enviar */
+        button[type="submit"] {
+            background-color: #000000; /* Fondo negro */
+            color: #ffffff; /* Texto blanco */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Cambiar el estilo del botón al pasar el cursor sobre él */
+        button[type="submit"]:hover {
+            background-color: #333333; /* Fondo gris oscuro */
+        }
+    </style>
 </head>
 <body>
-    <h1>Registro</h1>
-    <form action="/registrar" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br>
+    <div class="container">
+        <h1 class="mt-4">Registro</h1>
+        <form action="/registrar" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
 
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" required><br>
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" class="form-control" required>
+            </div>
 
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required><br>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" class="form-control" required>
+            </div>
 
-        <button type="submit">Registrarse</button>
-    </form>
+            <button type="submit" class="btn btn-dark">Registrarse</button>
+        </form>
+    </div>
 </body>
 </html>
-
