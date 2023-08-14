@@ -64,6 +64,8 @@ app.get('/registro', (req, res) => {
 // Ruta para servir archivos estáticos (como imágenes) desde la carpeta 'public'
 
 app.use(express.static('public'));
+// Configura la carpeta 'carritoverohtml' para servir archivos estáticos
+app.use('/AnvePrint/carritoverohtml', express.static(path.join(__dirname, '/carritoverohtml')));
 
 //add mime para los estilos
 app.get('/styles/styles.css', (req, res) => {
@@ -87,12 +89,14 @@ app.use((err, req, res, next) => {
   res.status(500).send('Ocurrió un error en el servidor');
 });
 
+//Carrito compras
 app.get('/AnvePrint/carritoverohtml/BrainFood.html', (req, res) => {
   // Aquí puedes enviar el contenido HTML del carrito de compras como respuesta
-  res.sendFile(__dirname + '/ruta-a-tu-carpeta-del-carrito/BrainFood.html');
+  res.sendFile(__dirname + "/carritoverohtml/catalogo.html");
 });
 
-app.use('/AnvePrint/carritoverohtml', express.static(__dirname + '/ruta-a-tu-carpeta-del-carrito'));
+app.use('/AnvePrint/carritoverohtml', express.static(__dirname + '/carritoverohtml/catalogo.html'));
+
 
 
 // Inicia el servidor
