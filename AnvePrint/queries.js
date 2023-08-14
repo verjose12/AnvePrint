@@ -20,5 +20,10 @@ function authenticateUser(correo, contrasena, callback) {
 module.exports = {
   insertUser,
   authenticateUser,
+
+  //Manda a llamar el nombre que registro el usuario
+  getRegisteredUserName: (nombre, callback) => {
   // Agrega más funciones de consulta aquí si es necesario
+  callback(null, nombre);
+},
 };

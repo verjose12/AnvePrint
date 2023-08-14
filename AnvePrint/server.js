@@ -6,12 +6,25 @@ const port = 3000; // Se Puede cambiar el puerto según lo que se necesite
 const mime = require("mime");
 const db = require('./db'); //importa el modulo db.js
 const queries = require('./queries'); // conecta a tu módulo queries.js
+const session = require('express-session'); //Para el manejo de las sesiones
+
+// Manejo de sessiones 
+app.use(session({
+  secret: 'secret-key', //clave secreta fuerte
+  resave: false,
+  saveUninitialized: true
+}));
+
+app.get('/AnvePrint', (req, res) => {
+  const username = req.query.usuario; // Obtén el nombre de usuario del parámetro de consulta
+  res.render('AnvePrint', { username }); // Pasa el nombre de usuario a la vista
+});
+
 
 //BD
 app.use(express.urlencoded({ extended: true }));
 
 app.post('/registrar', (req, res) => {
-  // Usar la conexión desde el módulo db.js para realizar la inserción
   const { nombre, correo, contrasena } = req.body;
 
   queries.insertUser(nombre, correo, contrasena, (error, results) => {
@@ -19,11 +32,17 @@ app.post('/registrar', (req, res) => {
       console.error('Error en la consulta:', error);
       res.status(500).send('Error al registrar el usuario');
     } else {
-      res.send('Usuario registrado exitosamente');
+      queries.getRegisteredUserName(nombre, (error, username) => {
+        if (error) {
+          console.error('Error al obtener el nombre de usuario:', error);
+          res.status(500).send('Error al obtener el nombre de usuario');
+        } else {
+          res.render('AnvePrint', { username });
+        }
+      });
     }
   });
 });
-
 
 app.post('/login', (req, res) => {
   const { correo, contrasena } = req.body;
@@ -66,6 +85,10 @@ app.get('/catalogo1', (req, res) => {
 
 app.get('/anveprint', (req, res) => {
   res.render('AnvePrint');
+});
+
+app.get('/index', (req, res) => {
+  res.render('index');
 });
 // Ruta para servir archivos estáticos (como imágenes) desde la carpeta 'public'
 
